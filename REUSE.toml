@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "godot-export-logs-validator"
+SPDX-PackageSupplier = "Florian Vazelle <florian.vazelle@vivaldi.net>"
+SPDX-PackageDownloadLocation = "https://github.com/florianvazelle/godot-export-logs-validator"
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Florian Vazelle"
+SPDX-License-Identifier = "MIT"

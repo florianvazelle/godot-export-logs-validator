@@ -1,0 +1,17 @@
+[build-system]
+requires = ["maturin==1.7.6"]
+build-backend = "maturin"
+
+[project]
+name = "godot-export-logs-validator"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Florian Vazelle", email = "florian.vazelle@vivaldi.net" }]
+requires-python = ">=3.7"
+license = { file = "LICENSE.md" }
+
+[tool.maturin]
+bindings = "bin"
+manifest-path = "Cargo.toml"
+strip = true
+include = ["rust-toolchain.toml"]
