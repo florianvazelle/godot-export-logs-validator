@@ -33,7 +33,7 @@ fn main() {
         println!("Checking Godot export log for issues...");
 
         // Process each line in the file
-        for line in lines.flatten() {
+        for line in lines.map_while(Result::ok) {
             let line = remove_ansi_escape_codes(&line);
             has_errors |= lint(&line, args.fail_on_warnings);
         }
